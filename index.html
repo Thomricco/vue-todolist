@@ -22,7 +22,7 @@
 
         <div class="box-list">
             <ul>
-                <li  v-for="(item, i) in todoList" :class="{ active: todoList[i].done === false }" class="d-flex justify-content-between ">{{ item.text }}
+                <li  v-for="(item, i) in todoList" :class="{done: item.done }" class="d-flex justify-content-between ">{{ item.text }}
                     <i class="fas fa-times" @click="removeAList(i)"></i>
                 </li>
             </ul>

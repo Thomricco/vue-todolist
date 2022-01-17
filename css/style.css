@@ -5,10 +5,6 @@
 }
 
 
-.active {
+.done {
     text-decoration: line-through;
-}
-
-.errorClass {
-
 }
