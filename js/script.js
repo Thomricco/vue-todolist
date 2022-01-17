@@ -1,7 +1,7 @@
 new Vue({
     el: "#app",
     data: {
-        mansioneNonFatta: false,
+        isActive: true,
         currentIndex: 0,
         todoList: [
             {
@@ -25,7 +25,7 @@ new Vue({
 
     methods: {
         AddAList: function() {
-            this.todoList.push(this.textTemoporaneo)
+            this.todoList.push({text: this.textTemoporaneo, done: ''})
             this.textTemoporaneo = ''
         },
 
@@ -33,9 +33,5 @@ new Vue({
             this.todoList.splice(index,1)
         },
         
-        mansione: function () {
-           
-            this.mansioneNonFatta = !this.mansioneNonFatta;
-        },
     }
 })

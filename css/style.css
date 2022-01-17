@@ -5,6 +5,10 @@
 }
 
 
-.true {
+.active {
     text-decoration: line-through;
+}
+
+.errorClass {
+
 }
