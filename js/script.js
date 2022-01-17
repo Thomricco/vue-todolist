@@ -6,15 +6,15 @@ new Vue({
         todoList: [
             {
                 text: 'Fare i compiti',
-                //done: false,
+                done: false,
             },
             {
                 text: 'Fare la spesa',
-                //done: false,
+                done: false,
             },
             {
                 text: 'Fare il bucato',
-                //done: true,
+                done: true,
             },
             
         ],
@@ -31,8 +31,11 @@ new Vue({
 
         removeAList: function(index) {
             this.todoList.splice(index,1)
-        }
+        },
         
-
+        mansione: function () {
+           
+            this.mansioneNonFatta = !this.mansioneNonFatta;
+        },
     }
 })
